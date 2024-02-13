@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <header id="navigation-bar">
+        <h3 id="logo"><img src="asset/download.jpg" alt="Nama Logo"></h3>
+        <nav id="navigation">
+            <a href="#result">Lihat Hasil</a>
+            <a href="#calculation-section">Lihat Rumus</a>
+        </nav>
+    </header>
+    <div class="content">   
+    <h1 class="website-title">Website Konversi Suhu</h1>
+    <b><p class="instruction">Masukkan suhu Celcius (*C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (*F).</p></b>
+    <div class="input-section">
+        <label for="input-field"><b>Celcius (*C):</b></label>
+        <input type="number" class="input-field" id="input-field" placeholder="Isi">
+    </div>
+        <button class="my-botton"onclick="convertTemperature()">Konversi</button>
+        <button class="input-field my-button reset-button" onclick="resetFields()">Reset</button>
+        <button class="input-field my-button reverse-button" onclick="reverseTemperature()">Reverse</button>
+        <div class="input-section">
+            <label for="input-fahrenheit"><b>Fahrenheit (*F):</b></label>
+            <input type="number" class="input-field" id="input-fahrenheit" placeholder="Isi" readonly>
+
+    </div>
+    <div class="input-section">
+        <label for="input-calculation-method"><b>Cara Kalkulasi:</b></label>
+        <input type="text" class="input-field" id="input-calculation-method" placeholder="Cara kalkulasi" readonly>
+    </div>  
+    <hr><h3 class="calculation-heading" id="calculation-section">Cara Konversi dari Celcius ke Fahrenheit</h3>
+<b></hr>  
+<p class="conversion-method">
+    Suhu dalam Derajat Fahrenheit (*F) sama dengan suhu dalam Derajat Celcius (*C) dikali 9/5 ditambah 32<br><br>
+    Suhu *F = (*C x 9/5) + 32</p></br>
+    Suhu ( °F − 32) × 5/9 = °C
+
+</p>
+</b><hr>
+    <div class="result-section" id="result"></div>
+    <div class="center-text">
+    <p class="developer-info">
+       <b> Developer 😊 Fahrizal Pratama</b>
+    </p>
+</body>
+</html>
